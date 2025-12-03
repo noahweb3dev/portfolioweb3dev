@@ -111,29 +111,41 @@ export default function Page() {
           </div>
         </div>
       </section>
+      {/* Projects */}
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Projects
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
-                </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Building innovative solutions in Web3 and SaaS. More exciting projects launching soon.
+                  Projects are in progress — Web3 and SaaS builds launching soon.
                 </p>
               </div>
             </div>
           </BlurFade>
-          {/* Projects grid (safe guard) */}
-          {(DATA.projects ?? []).slice(0, 1).map((project, id) => (
-            <BlurFade key={project.title ?? id} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
-              {/* render your single "Coming Soon" card */}
-            </BlurFade>
-          ))}
+
+          {/* Render exactly one placeholder project card so BlurFade has children */}
+          <BlurFade delay={BLUR_FADE_DELAY * 12}>
+            <div className="grid grid-cols-1 max-w-[800px] mx-auto">
+              <div className="rounded-lg border p-6 text-left">
+                <h3 className="text-xl font-semibold">Coming Soon</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Exciting projects are in development. Stay tuned for updates!
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="inline-flex items-center rounded-md border px-2 py-1 text-xs">
+                    React
+                  </span>
+                  <span className="inline-flex items-center rounded-md border px-2 py-1 text-xs">
+                    Next.js
+                  </span>
+                  <span className="inline-flex items-center rounded-md border px-2 py-1 text-xs">
+                    Web3
+                  </span>
+                </div>
+              </div>
+            </div>
+          </BlurFade>
         </div>
       </section>
       <section id="hackathons">
