@@ -162,7 +162,7 @@ export default function Page() {
         </div>
       </section>
       <section id="hackathons">
-        <div className="space-y-12 w-full py-12">
+        <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -173,30 +173,30 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I participated in multiple hackathons, where teams from across
-                  the country came together to build amazing projects in just a
-                  few days.
-                  Experiencing the creativity and drive of motivated individuals
-                  firsthand showed me the incredible possibilities that emerge
-                  when people
-                  are passionate and focused.
+                  I participated in multiple hackathons, where teams from across the country came together to build amazing projects in just a few days. Experiencing the creativity and drive of motivated individuals firsthand showed me the incredible possibilities that emerge when people are passionate and focused.
                 </p>
               </div>
             </div>
           </BlurFade>
-          {/* Hackathons grid (safe guard) */}
-          {(DATA.hackathons ?? []).map((hackathon, id) => (
-            <BlurFade key={hackathon.title ?? id} delay={BLUR_FADE_DELAY * 14 + id * 0.05}>
-              <HackathonCard
-                title={hackathon.title}
-                description={hackathon.description}
-                location={hackathon.location}
-                dates={hackathon.dates}
-                image={hackathon.image}
-                links={hackathon.links}
-              />
-            </BlurFade>
-          ))}
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+              {DATA.hackathons.map((hackathon, id) => (
+                <BlurFade
+                  key={hackathon.title + hackathon.dates}
+                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                >
+                  <HackathonCard
+                    title={hackathon.title}
+                    description={hackathon.description}
+                    location={hackathon.location}
+                    dates={hackathon.dates}
+                    image={hackathon.image}
+                    links={hackathon.links}
+                  />
+                </BlurFade>
+              ))}
+            </ul>
+          </BlurFade>
         </div>
       </section>
       <section id="contact">
