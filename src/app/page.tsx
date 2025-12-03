@@ -45,7 +45,7 @@ export default function Page() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            I'm a builder who left traditional work to pursue real freedom—creating products that solve genuine problems. 
+            I&apos;m a builder who left traditional work to pursue real freedom—creating products that solve genuine problems. 
             I learn relentlessly and build with purpose. Currently laser-focused on launching a{" "}
             <Link href="#projects" className="text-white hover:underline">
               SaaS product
@@ -58,7 +58,7 @@ export default function Page() {
             <Link href="#hackathons" className="text-white hover:underline">
               hackathons
             </Link>
-            {" "}to see what I've built.
+            {" "}to see what I&apos;ve built.
           </p>
         </BlurFade>
       </section>
