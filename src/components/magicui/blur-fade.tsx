@@ -30,7 +30,7 @@ export const BlurFade = ({
 }: BlurFadeProps) => {
   const ref = useRef(null);
   // Framer Motion expects a margin string; pass as-is
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin } as any);
+  const inViewResult = useInView(ref, { once: true, margin: inViewMargin ?? "0px" });
   const isInView = !inView || inViewResult;
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },

@@ -54,7 +54,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
-          {DATA.work.map((work, id) => (
+          {(DATA.work ?? []).map((work, id) => (
             <BlurFade
               key={work.company}
               delay={BLUR_FADE_DELAY * 6 + id * 0.05}
@@ -79,7 +79,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
-          {DATA.education.map((education, id) => (
+          {(DATA.education ?? []).map((education, id) => (
             <BlurFade
               key={education.school}
               delay={BLUR_FADE_DELAY * 8 + id * 0.05}
@@ -128,26 +128,12 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
-          </div>
+          {/* Projects grid (safe guard) */}
+          {(DATA.projects ?? []).slice(0, 1).map((project, id) => (
+            <BlurFade key={project.title ?? id} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
+              {/* render your single "Coming Soon" card */}
+            </BlurFade>
+          ))}
         </div>
       </section>
       <section id="hackathons">
@@ -169,25 +155,19 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
-          </BlurFade>
+          {/* Hackathons grid (safe guard) */}
+          {(DATA.hackathons ?? []).map((hackathon, id) => (
+            <BlurFade key={hackathon.title ?? id} delay={BLUR_FADE_DELAY * 14 + id * 0.05}>
+              <HackathonCard
+                title={hackathon.title}
+                description={hackathon.description}
+                location={hackathon.location}
+                dates={hackathon.dates}
+                image={hackathon.image}
+                links={hackathon.links}
+              />
+            </BlurFade>
+          ))}
         </div>
       </section>
       <section id="contact">

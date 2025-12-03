@@ -9,22 +9,13 @@ export const metadata = {
 
 const BLUR_FADE_DELAY = 0.04;
 
-export default async function BlogPage() {
-  const posts = await getBlogPosts();
-
+export default function BlogPage() {
   return (
-    <section>
-      <BlurFade delay={BLUR_FADE_DELAY}>
-        <h1 className="font-medium text-2xl mb-8 tracking-tighter">blog</h1>
-      </BlurFade>
-      <BlurFade delay={BLUR_FADE_DELAY * 2}>
-        <div className="flex flex-col items-center justify-center py-12 text-center">
-          <p className="text-muted-foreground text-lg">Coming soon...</p>
-          <p className="text-muted-foreground text-sm mt-2">
-            I&apos;ll be sharing thoughts on Web3, SaaS development, and building in public.
-          </p>
-        </div>
-      </BlurFade>
-    </section>
+    <main className="container mx-auto max-w-2xl py-12">
+      <h1 className="text-3xl font-bold mb-4">blog</h1>
+      <p className="text-muted-foreground">
+        Coming soon — I’ll share notes on Web3, SaaS, and building in public.
+      </p>
+    </main>
   );
 }
