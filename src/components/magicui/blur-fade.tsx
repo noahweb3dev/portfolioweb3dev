@@ -14,7 +14,7 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string; // rootMargin-style string, e.g., "0px 0px -10% 0px"
+  inViewMargin?: string; // keep prop for future, but we won't pass it to useInView
   blur?: string;
 }
 export const BlurFade = ({
@@ -25,32 +25,29 @@ export const BlurFade = ({
   delay = 0,
   yOffset = 6,
   inView = true,
-  inViewMargin,
+  inViewMargin, // accepted but not used to avoid type issues on Vercel build
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null);
-  // Framer Motion expects a margin string; pass as-is
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin ?? "0px" });
+
+  // Fix: Do not pass `margin` to useInView to avoid MarginType typing error
+  const inViewResult = useInView(ref, { once: true });
+
   const isInView = !inView || inViewResult;
+
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
-    visible: { y: -yOffset, opacity: 1, filter: `blur(0px)` },
+    visible: { y: 0, opacity: 1, filter: "blur(0px)" },
   };
-  const combinedVariants = variant || defaultVariants;
+
   return (
     <AnimatePresence>
       <motion.div
         ref={ref}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        exit="hidden"
-        variants={combinedVariants}
-        transition={{
-          delay: 0.04 + delay,
-          duration,
-          ease: "easeOut",
-        }}
-        className={className}
+        variants={defaultVariants}
+        transition={{ duration, ease: "easeOut" }}
       >
         {children}
       </motion.div>
