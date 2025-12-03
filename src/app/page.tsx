@@ -47,15 +47,15 @@ export default function Page() {
           <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             I&apos;m a builder who left traditional work to pursue real freedom—creating products that solve genuine problems. 
             I learn relentlessly and build with purpose. Currently laser-focused on launching a{" "}
-            <Link href="#projects" className="text-white hover:underline">
+            <Link href="#projects" className="text-foreground font-semibold hover:underline">
               SaaS product
             </Link>{" "}
             that creates lasting impact. Check out my{" "}
-            <Link href="#work" className="text-white hover:underline">
+            <Link href="#work" className="text-foreground font-semibold hover:underline">
               work experience
             </Link>
             {" "}and{" "}
-            <Link href="#hackathons" className="text-white hover:underline">
+            <Link href="#hackathons" className="text-foreground font-semibold hover:underline">
               hackathons
             </Link>
             {" "}to see what I&apos;ve built.
