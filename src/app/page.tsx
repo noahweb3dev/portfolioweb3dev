@@ -44,9 +44,22 @@ export default function Page() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
+          <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+            I'm a builder who left traditional work to pursue real freedom—creating products that solve genuine problems. 
+            I learn relentlessly and build with purpose. Currently laser-focused on launching a{" "}
+            <Link href="#projects" className="text-white hover:underline">
+              SaaS product
+            </Link>{" "}
+            that creates lasting impact. Check out my{" "}
+            <Link href="#work" className="text-white hover:underline">
+              work experience
+            </Link>
+            {" "}and{" "}
+            <Link href="#hackathons" className="text-white hover:underline">
+              hackathons
+            </Link>
+            {" "}to see what I've built.
+          </p>
         </BlurFade>
       </section>
       <section id="work">
@@ -160,8 +173,12 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I participated in multiple hackathons, where teams from across the country came together to build amazing projects in just a few days.
-                  Experiencing the creativity and drive of motivated individuals firsthand showed me the incredible possibilities that emerge when people
+                  I participated in multiple hackathons, where teams from across
+                  the country came together to build amazing projects in just a
+                  few days.
+                  Experiencing the creativity and drive of motivated individuals
+                  firsthand showed me the incredible possibilities that emerge
+                  when people
                   are passionate and focused.
                 </p>
               </div>
@@ -197,6 +214,8 @@ export default function Page() {
                 <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   with a direct question on twitter
                 </Link>{" "}
