@@ -181,19 +181,18 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
               {DATA.hackathons.map((hackathon, id) => (
-                <BlurFade
-                  key={hackathon.title + hackathon.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={hackathon.title}
-                    description={hackathon.description}
-                    location={hackathon.location}
-                    dates={hackathon.dates}
-                    image={hackathon.image}
-                    links={hackathon.links}
-                  />
-                </BlurFade>
+                <li key={hackathon.title + hackathon.dates}>
+                  <BlurFade delay={BLUR_FADE_DELAY * 15 + id * 0.05}>
+                    <HackathonCard
+                      title={hackathon.title}
+                      description={hackathon.description}
+                      location={hackathon.location}
+                      dates={hackathon.dates}
+                      image={hackathon.image}
+                      links={hackathon.links}
+                    />
+                  </BlurFade>
+                </li>
               ))}
             </ul>
           </BlurFade>
