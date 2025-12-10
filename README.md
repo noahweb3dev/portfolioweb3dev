@@ -1,7 +1,3 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
-
 # Noah's Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnoahweb3dev%2Fportfolioweb3dev)
 
 A modern portfolio website showcasing my work as a Web3 builder and SaaS creator. Built with Next.js, Shadcn/UI, and Magic UI, deployed on Vercel.
