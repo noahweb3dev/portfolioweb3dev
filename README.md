@@ -1,32 +1,47 @@
-<<<<<<< HEAD
 <div align="center">
 <img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
 </div>
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+# Noah's Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnoahweb3dev%2Fportfolioweb3dev)
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+A modern portfolio website showcasing my work as a Web3 builder and SaaS creator. Built with Next.js, Shadcn/UI, and Magic UI, deployed on Vercel.
 
-# Features
+## 🚀 Live Demo
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+Visit the live site: [noahweb3dev.vercel.app](https://noahweb3dev.vercel.app)
 
-# Getting Started Locally
+## ✨ Features
 
-1. Clone this repository to your local machine:
+- **Fast Setup**: Quick configuration through a single [config file](./src/data/resume.tsx)
+- **Modern Stack**: Built with Next.js 14, React, TypeScript, Shadcn/UI, TailwindCSS, Framer Motion, and Magic UI
+- **Blog Ready**: Includes MDX-powered blog support for sharing thoughts on Web3, SaaS, and building in public
+- **Fully Responsive**: Optimized for all devices - mobile, tablet, and desktop
+- **Performance Optimized**: WebP images, lazy loading, and optimized for Vercel deployment
+- **Accessible**: WCAG compliant with proper ARIA labels and semantic HTML
+- **Dark Mode**: Built-in theme toggle for light and dark modes
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **UI Components**: Shadcn/UI, Magic UI
+- **Animation**: Framer Motion
+- **Deployment**: Vercel
+- **Content**: MDX for blog posts
+
+## 🏃‍♂️ Getting Started Locally
+
+1. Clone this repository:
 
    ```bash
-   git clone https://github.com/dillionverma/portfolio
+   git clone https://github.com/noahweb3dev/portfolioweb3dev.git
    ```
 
 2. Move to the cloned directory
 
    ```bash
-   cd portfolio
+   cd portfolioweb3dev
    ```
 
 3. Install dependencies:
@@ -43,10 +58,10 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 
 5. Open the [Config file](./src/data/resume.tsx) and make changes
 
-# License
+## 📄 License
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
-=======
-# Portfolio
- a portfolio website with 'send email function' from client side
->>>>>>> 87841d01dd4dbeb215f6060d0457ce433df2c432
+Licensed under the [MIT license](https://github.com/noahweb3dev/portfolioweb3dev/blob/main/LICENSE).
+
+## 🙏 Credits
+
+Portfolio template originally by [Dillion Verma](https://github.com/dillionverma/portfolio), customized and enhanced by Noah.

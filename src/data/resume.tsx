@@ -11,7 +11,7 @@ export const DATA = {
     "Web3 builder and SaaS creator. I love building things and helping people. Very active on Twitter.",
   summary:
     "I'm a driven builder who sees the internet as the ultimate platform for turning ideas into reality. I left traditional work to pursue real freedom—creating products that solve genuine problems. My approach is simple: curiosity scales faster than capital. I learn relentlessly, think deeply, and build with purpose. Right now, I'm laser-focused on launching a SaaS product that creates lasting impact and scales beyond me.",
-  avatarUrl: "/profile-pic.jpg", // Update this if you have a custom avatar
+  avatarUrl: "/profile-pic.webp",
   skills: [
     "React",
     "Next.js",
@@ -140,7 +140,7 @@ export const DATA = {
       dates: "2022",
       location: "Remote",
       description: "Built full-stack Web3 applications with NFT minting and smart contracts.",
-      image: "https://via.placeholder.com/150/4A90E2/ffffff?text=Buildspace",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%234A90E2'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white'%3EBuildspace%3C/text%3E%3C/svg%3E",
       links: [],
     },
     {
@@ -148,7 +148,7 @@ export const DATA = {
       dates: "2021",
       location: "Lagos, Nigeria",
       description: "Created decentralized payment & identity verification prototype. Won 'Best Use of Blockchain for Social Impact.'",
-      image: "https://via.placeholder.com/150/00D4AA/ffffff?text=CryptoHacks",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%2300D4AA'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='white'%3ECryptoHacks%3C/text%3E%3C/svg%3E",
       links: [],
     },
     {
@@ -156,7 +156,7 @@ export const DATA = {
       dates: "2022",
       location: "Remote",
       description: "Built DeFi protocol with smart contract integrations and Web3 authentication.",
-      image: "https://via.placeholder.com/150/8B5CF6/ffffff?text=ETHGlobal",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%238B5CF6'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white'%3EETHGlobal%3C/text%3E%3C/svg%3E",
       links: [],
     },
     {
@@ -164,7 +164,7 @@ export const DATA = {
       dates: "2021",
       location: "Lagos, Nigeria",
       description: "Developed blockchain-based supply chain tracking system.",
-      image: "https://via.placeholder.com/150/F59E0B/ffffff?text=Web3Lagos",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%23F59E0B'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='white'%3EWeb3Lagos%3C/text%3E%3C/svg%3E",
       links: [],
     },
     {
@@ -172,7 +172,7 @@ export const DATA = {
       dates: "2022",
       location: "Remote",
       description: "Created NFT marketplace on Solana with fast transactions and low fees.",
-      image: "https://via.placeholder.com/150/14F195/ffffff?text=Solana",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%2314F195'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white'%3ESolana%3C/text%3E%3C/svg%3E",
       links: [],
     },
   ],

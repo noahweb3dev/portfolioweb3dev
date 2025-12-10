@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
     default: "NOAH | web3dev",
-    template: `%s | NOAH`,
+    template: `%s | web3dev`,
   },
   description: DATA.description,
   keywords: [
